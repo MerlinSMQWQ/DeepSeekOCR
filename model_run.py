@@ -23,3 +23,6 @@ def run(image_file = '/root/DeepSeekOCR/img/test.png', output_path = '/root/Deep
     # Gundam: base_size = 1024, image_size = 640, crop_mode = True
 
     res = model.infer(tokenizer, prompt=prompt, image_file=image_file, output_path = output_path, base_size = 1024, image_size = 640, crop_mode=True, save_results = True, test_compress = True)
+
+if __name__ == "__main__":
+    run()
